@@ -1,0 +1,65 @@
+.GameBricks {
+    box-shadow: 0px 0px 5px #000, inset 0px 0px 20px #ff0;
+    outline: 1px solid #555;
+    min-height: 10px;
+    min-width: 10px;
+    opacity: 1;
+    transition: all linear 1s;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+
+
+.GameBrickOut {
+    opacity: 0;
+    transition: all ease 1s;
+    transform: rotate(10000deg);
+    position: absolute;
+    display: inline-block;
+}
+
+.GameBall {
+    position: absolute;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #000;
+    margin-left: -10px;
+    z-index: 100000000;
+    will-change: top, left;
+    box-shadow: 0 0 5px #fff;
+}
+
+.GamePad {
+    position: absolute;
+    left: 50%;
+    width: 100px;
+    height: 20px;
+    border-radius: 10px;
+    background: #000;
+    margin-left: -50px;
+    z-index: 100000000;
+    will-change: top, left;
+    box-shadow: 0 0 5px #fff;
+
+}
+
+.GameScores {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    z-index: 1000000;
+    text-align: center;
+}
+
+.GameScores button {
+    padding: 3px 25px;
+    background: rgba(255, 255, 255, 0.5);
+    color: #000;
+}
